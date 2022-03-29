@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthContexProvider } from './contexts/AuthContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthContexProvider>
+     <App />
+    </AuthContexProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
